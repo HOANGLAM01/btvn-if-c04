@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="nhập tuổi" id="data">
+    <button onclick="check()">Kiểm tra</button>
+    <h3 id="show"></h3>
+    <script>
+        function check(){
+            let a = document.getElementById("data").value
+            if (a>=15){
+                document.getElementById("show").innerHTML="đủ điều kiện";
+            }else{
+                document.getElementById("show").innerHTML="Không đủ điều kiện";
+            }
+        }
+    </script>
+</body>
+</html>
